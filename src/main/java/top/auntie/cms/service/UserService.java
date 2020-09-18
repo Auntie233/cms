@@ -1,11 +1,15 @@
 package top.auntie.cms.service;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import top.auntie.cms.dto.UserDto;
+import top.auntie.cms.exception.CommonException;
 import top.auntie.cms.pojo.User;
-
-import java.util.List;
 
 public interface UserService {
 
-    List<User> findUserWithPage();
+    Page<User> findUserWithPage(Integer page, Integer size);
+
+    void saveUser(UserDto userDto) throws CommonException;
 
 }
