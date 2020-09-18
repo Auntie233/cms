@@ -1,0 +1,30 @@
+@if(!isEmpty(pandaList)){
+@for(panda in pandaList){
+<li>
+    <a href="${panda.hostIcon}" data-rel="colorbox">
+        <img width="220" height="150" alt="220x150" src="${panda.liveIcon}" />
+        <div class="text">
+            <div class="inner">${panda.liveName}</div>
+        </div>
+    </a>
+
+    <div class="tools tools-bottom">
+        <a href="#">
+            <i class="ace-icon fa fa-link"></i>
+        </a>
+
+        <a href="#">
+            <i class="ace-icon fa fa-paperclip"></i>
+        </a>
+
+        <a href="#">
+            <i class="ace-icon fa fa-pencil"></i>
+        </a>
+
+        <a href="#">
+            <i class="ace-icon fa fa-times red"></i>
+        </a>
+    </div>
+</li>
+@}
+@}
