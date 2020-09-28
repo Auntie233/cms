@@ -23,7 +23,7 @@ public class WebAutoConfiguration implements WebMvcConfigurer {
         // 2.添加fastjson的配置信息，比如: 是否需要格式化返回的json数据
         FastJsonConfig fastJsonConfig = new FastJsonConfig();
         fastJsonConfig.setCharset(StandardCharsets.UTF_8);
-//        fastJsonConfig.setDateFormat("yyyy-MM-dd HH:mm:ss");
+        fastJsonConfig.setDateFormat("yyyy-MM-dd HH:mm:ss");
         fastJsonConfig.setSerializerFeatures(
                 SerializerFeature.WriteMapNullValue,
                 SerializerFeature.WriteNullListAsEmpty);

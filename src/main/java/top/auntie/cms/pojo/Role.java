@@ -31,7 +31,7 @@ public class Role implements Serializable {
     @Column(name = "create_time")
     private Date createTime;
 
-    @Column(name = "update_time")
+    @Column(name = "update_time", insertable = false, updatable = false)
     private Date updateTime;
 
     @Column(name = "status")
